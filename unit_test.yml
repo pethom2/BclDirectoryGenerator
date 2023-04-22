@@ -1,9 +1,0 @@
-name: learn-github-actions
-on: [push]
-jobs:
-  docker:
-    name: Docker
-    runs-on: ubuntu-latest
-    steps:
-    - name: Checkout
-      uses: actions/checkout@master
