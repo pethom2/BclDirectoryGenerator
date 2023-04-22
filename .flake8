@@ -1,0 +1,5 @@
+[flake8]
+max-line-length = 100 # My preference; prefer 80 for comments, with max at 120 for odd string cases
+extend-ignore =
+    # See https://github.com/PyCQA/pycodestyle/issues/373
+    E203,
