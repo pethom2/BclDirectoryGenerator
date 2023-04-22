@@ -7,8 +7,3 @@ jobs:
     steps:
     - name: checkout
       uses: actions/checkout@main
-      uses: actions/setup-node@main
-        with:
-          node-version: '14'
-      run: npm install -g bats
-      run: bats -v
