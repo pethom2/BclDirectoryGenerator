@@ -1,9 +1,9 @@
-name: learn-github-actions
-run-name: ${{ github.actor }} is learning GitHub Actions
-on: [push]
+on: push
+name: Build and Publish
 jobs:
-  check-bats-version:
+  docker:
+    name: Docker
     runs-on: ubuntu-latest
     steps:
-    - name: checkout
-      uses: actions/checkout@main
+    - name: Checkout
+      uses: actions/checkout@master
